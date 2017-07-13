@@ -8,6 +8,7 @@ var app = express();
 
 // Require handlebars
 var exphbs = require('express-handlebars');
+var PORT = process.env.PORT || 3000;
 
 // Create `ExpressHandlebars` instance with a default layout.
 var hbs = exphbs.create({
@@ -175,6 +176,6 @@ app.post('/remove/:id', function(req, res) {
 });
 
 // Listen on port 3000
-app.listen(3000, function() {
+app.listen(PORT, function() {
   console.log('App running on port 3000!');
 });
