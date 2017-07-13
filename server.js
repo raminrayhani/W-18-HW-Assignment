@@ -30,7 +30,7 @@ var cheerio = require('cheerio');
 
 // Require mongoose and mongodb objectid
 var mongoose = require('mongoose');
-var ObjectId = require('mongoos').ObjectID;
+var ObjectId = require('mongoose').ObjectID;
 
 // Database configuration
 mongoose.connect('mongodb://heroku_cmqld930:9u1o1t67iuah4nl39j0dpjtvfm@ds131041.mlab.com:31041/heroku_cmqld930');
